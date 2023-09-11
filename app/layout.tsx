@@ -1,6 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import ApolloWrapper from '@/src/context/ApolloWrapper'
+import Navbar from '@/src/components/Layout/Navbar/navbar'
+import Footer from '@/src/components/Layout/Footer/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ApolloWrapper>
+            <Navbar />
+            {children}
+            <Footer />
+        </ApolloWrapper>
+      </body>
     </html>
   )
 }
