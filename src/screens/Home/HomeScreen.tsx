@@ -8,7 +8,8 @@ import Counter from "@/src/components/Counter";
 const HomeScreen = () => {
     return <>
         <div className="container mx-auto">
-            <PopularProducts/>
+            {/* <PopularProducts/> */}
+            <NewProducts/>
         </div>
     </>
 }
