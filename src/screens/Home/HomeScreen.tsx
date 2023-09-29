@@ -9,7 +9,7 @@ const HomeScreen = () => {
     return <>
         <div className="container mx-auto">
             {/* <PopularProducts/> */}
-            <NewProducts/>
+            <NewProducts />
         </div>
     </>
 }
