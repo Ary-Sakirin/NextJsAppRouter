@@ -4,17 +4,16 @@ export default function NewProducts() {
     return (
         <>
             <div className="px-2 py-2">
-                <video
-                    width="100%"
-                    height="100%"
-                    autoPlay
-                    muted
-                    loop
-                    className="rounded-2xl"
-                >
-                    <source src="/pexels-koolshooters-8519683 (2160p).mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                <div className="hero min-h-[350px] bg-base-200 rounded-2xl">
+                    <div className="hero-content text-center">
+                        <div className="max-w-md">
+                            <h1 className="text-5xl font-extrabold">LEBRON XXI</h1>
+                            <h1 className="text-5xl font-extrabold">JUST LANDED</h1>
+                            <p className="py-6 font-semibold">Takeoff in the XXIs newest colorway 'Akoya, built with Zoom technology to raise your game to another level.</p>
+                            <button className="btn btn-outline font-extrabold">Shop</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <h1 className="text-[25px] font-bold px-2 py-2">New products</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
